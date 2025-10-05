@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>задание 3</title>
+  <!-- Подключение Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="bg-light">
+  <!-- Шапка сайта -->
+  <header class="bg-pink py-3">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
+        <div class="d-flex align-items-center mb-3 mb-md-0">
+          <img src="https://i.pinimg.com/736x/be/b3/f5/beb3f58d75094ea102fd5317d8a8667a.jpg" 
+               alt="Логотип" 
+               class="rounded-image me-3" 
+               style="width: 80px; height: 80px;">
+          <h1 class="h3 mb-0">Сайт для котиков</h1>
+        </div>
+        
+        <!-- Навигация -->
+        <nav class="d-flex flex-column flex-md-row">
+          <a class="nav-link px-2 px-md-3 py-1" href="#center">Список гиперссылок</a>
+          <a class="nav-link px-2 px-md-3 py-1" href="#tablic">Таблица</a>
+          <a class="nav-link px-2 px-md-3 py-1" href="#forma">Форма</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="container my-4">
+    <div class="row g-4">
+      <!-- Список гиперссылок -->
+      <div id="center" class="col-12 col-lg-8">
+        <div class="bg-section p-3 rounded">
+          <h3 class="mb-3">Список гиперссылок</h3>
+          <ol class="list ps-3">
+            <li class="mb-2"><a href="https://www.kubsu.ru/" title="Официальный сайт Кубанского государственного университета">КубГУ</a></li>
+            <li class="mb-2"><a href="http://www.kubsu.ru/" title="Официальный сайт Кубанского государственного университета">КубГУ</a></li>
+            <li class="mb-2">
+              <img src="https://i.pinimg.com/originals/e1/e1/71/e1e171cf8abc233d64570f286e27faaf.jpg" 
+                   alt="картинка котик" 
+                   class="img-fluid" 
+                   style="max-width: 300px;">
+            </li>
+            <li class="mb-2"><a href="about.html"> Внутренняя страница </a></li>
+            <li class="mb-2"><a href="#cats">Котики</a></li>
+            <li class="mb-2"><a href="https://www.kubsu.ru/ru/search/content?keys=абитуриенты">ссылка с 3 параметрами</a></li>
+            <li class="mb-2"><a href="https://kubsu.ru/?ysclid=mfkyokftp2655745116a">ссылка с id</a></li>
+            <li class="mb-2"><a href="./code1.html"> Ссылка на страницу в текущем каталоге</a></li>
+            <li class="mb-2"><a href="./about.html"> Ссылка на страницу в каталоге about</a></li>
+            <li class="mb-2"><a href="../code2.html"> Ссылка на страницу в каталоге уровнем выше</a></li>
+            <li class="mb-2"><a href="../../code3.html"> Ссылка на страницу в каталоге двумя уровнями выше</a></li>
+            <li class="mb-2">
+              <a href="#cats">Котики</a> оказывают положительное влияние на жизнь человека. В психологическом плане
+              они эффективно снижают стресс и чувство одиночества — регулярное поглаживание питомца нормализует уровень
+              кортизола и стимулирует выработку «гормонов счастья». Их мурлыкание, работающее в диапазоне 20–140 Гц,
+              обладает терапевтическим эффектом: ускоряет восстановление тканей и облегчает хронические боли.
+            </li>
+            <li class="mb-2"><a href="https://www.kubsu.ru/lib/images/Group3288.png">Ссылка на фрагмент стороннего сайта</a></li>
+            <li class="mb-2">Ссылки из прямоугольных и круглых областей картинки</li>
+            <li class="mb-2">
+              <img src="aaa.png" class="img-fluid" style="max-width: 200px;" usemap="#element">
+              <map name="element">
+                <area shape="rect" coords="0,0,251,274" href="http://www.kubsu.ru">
+                <area shape="circle" coords="400,64,64" href="http://www.kubsu.ru">
+              </map>
+            </li>
+            <li class="mb-2"><a href=""> Ссылка с пустым href</a></li>
+            <li class="mb-2"><a title="............"> Ссылка без href</a></li>
+            <li class="mb-2"><a href="index.html" rel="nofollow"> Ссылка, по которой запрещен переход поисковикам</a></li>
+            <li class="mb-2">
+              <noindex><a href="index.html"> Ссылка, запрещенная для индексации поисковиками</a></noindex>
+            </li>
+            <li class="mb-2">
+              <ol>
+                Нумерованный список ссылок
+                <li><a href="https://www.kubsu.ru" title="Первая">ссылка</a></li>
+                <li><a href="https://www.kubsu.ru" title="Вторая">ссылка</a></li>
+                <li><a href="https://www.kubsu.ru" title="Третья">ссылка</a></li>
+              </ol>
+            </li>
+          </ol>
+        </div>
+      </div>
+      
+      <!-- Таблица -->
+      <div id="tablic" class="col-12 col-lg-4">
+        <div class="bg-section p-3 rounded">
+          <h3 class="mb-3">Таблица</h3>
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <tr class="table-pink">
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+              </tr>
+              <tr class="table-light">
+                <td>1.1</td>
+                <td>2.1</td>
+                <td>3.1</td>
+                <td>4.1</td>
+              </tr>
+              <tr class="table-pink">
+                <td>1.2</td>
+                <td rowspan="2">2.2</td>
+                <td>3.2</td>
+                <td>4.2</td>
+              </tr>
+              <tr class="table-light">
+                <td>1.3</td>
+                <td colspan="2">2.3</td>
+              </tr>
+              <tr class="table-pink">
+                <td>1.4</td>
+                <td>2.4</td>
+                <td>3.4</td>
+                <td>4.4</td>
+              </tr>
+              <tr class="table-light">
+                <td>1.5</td>
+                <td>2.5</td>
+                <td>3.5</td>
+                <td>4.5</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Форма -->
+    <div id="forma" class="row mt-4">
+      <div class="col-12">
+        <div class="bg-section p-3 rounded">
+          <h3 class="mb-3">Форма</h3>
+          <form action="" method="POST">
+            <div class="row g-3">
+              <div class="col-12 col-md-6">
+                <label class="form-label">Ваше ФИО</label>
+                <input class="form-control" name="field-name" placeholder="Введите ФИО">
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="form-label">Телефон</label>
+                <input class="form-control" name="field-tel" placeholder="Введите номер телефона" type="tel">
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="form-label">E-mail</label>
+                <input class="form-control" name="field-email" placeholder="Введите email" type="email">
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="form-label">Дата рождения</label>
+                <input class="form-control" name="field-date" placeholder="Введите дату рождения" type="date">
+              </div>
+              
+              <div class="col-12">
+                <label class="form-label">Пол</label>
+                <div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="radio-group-1" id="male" value="Значение1">
+                    <label class="form-check-label" for="male">Муж</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="radio-group-1" id="female" value="Значение2">
+                    <label class="form-check-label" for="female">Жен</label>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-12">
+                <label class="form-label">Любимый язык программирования:</label>
+                <select class="form-select" name="listbox" multiple size="5">
+                  <option value="Значение1" selected>Pascal</option>
+                  <option value="Значение2" selected>C</option>
+                  <option value="Значение3" selected>C++</option>
+                  <option value="Значение4" selected>JavaScript</option>
+                  <option value="Значение5" selected>PHP</option>
+                  <option value="Значение6" selected>Python</option>
+                  <option value="Значение7" selected>Java</option>
+                  <option value="Значение8" selected>Haskel</option>
+                  <option value="Значение9" selected>Clojure</option>
+                  <option value="Значение10" selected>Prolog</option>
+                  <option value="Значение11" selected>Scala</option>
+                </select>
+              </div>
+              
+              <div class="col-12">
+                <label class="form-label">Биография:</label>
+                <textarea class="form-control" name="field-name-2" rows="3">Расскажите вашу историю</textarea>
+              </div>
+              
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" checked name="check-1" id="contract">
+                  <label class="form-check-label" for="contract">
+                    С контрактом ознакомлен (а)
+                  </label>
+                </div>
+              </div>
+              
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Сохранить</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Галерея котиков -->
+    <section id="cats" class="row mt-4">
+      <div class="col-12">
+        <div class="bg-section p-3 rounded">
+          <h2 class="mb-3">Милые котики</h2>
+          <div class="row g-3">
+            <div class="col-6 col-md-3">
+              <img src="https://i.pinimg.com/736x/76/6a/4f/766a4f54db2465903e6d719052b47fa2.jpg" 
+                   alt="котик1" 
+                   class="img-fluid rounded">
+            </div>
+            <div class="col-6 col-md-3">
+              <img src="https://i.pinimg.com/736x/0b/95/78/0b9578233e45f403db499f11ab6357af.jpg" 
+                   alt="котик2" 
+                   class="img-fluid rounded">
+            </div>
+            <div class="col-6 col-md-3">
+              <img src="https://i.pinimg.com/originals/76/a0/06/76a0065375966075c31457a63a05b7b0.jpg" 
+                   alt="котик3" 
+                   class="img-fluid rounded">
+            </div>
+            <div class="col-6 col-md-3">
+              <img src="https://kto-chto-gde.ru/wp-content/uploads/2022/05/10-vydayushhixsya-talantov-v-mire-zhivotnyx-kotorye-tyanut-na-oskar-1.jpg" 
+                   alt="котик4" 
+                   class="img-fluid rounded">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-section py-2 mt-4">
+    <div class="container text-center">
+      (с) Шкурко Валерия
+    </div>
+  </footer>
+
+  <!-- Подключение Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
